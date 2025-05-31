@@ -1,0 +1,106 @@
+*{
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Rubik+Doodle+S');
+body{
+    background-color: rgba(0, 0, 0, 0.918);
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    
+}
+.navbar{
+    background-color:rgba(62, 7, 151, 0.959);
+    display:flex;
+    margin:10px 20px 20px 20px;
+    position: sticky;
+    top: 0;
+    animation:color 2s;
+}
+.navbar ul{
+    background-color:rgb(221, 221, 221);
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    font-family:'Helvetica Neue';
+}
+.listitem{
+    background-color: rgb(22, 214, 96);
+}
+h1{
+    color: lab(75.82% -72.75 63.85);
+}
+p{
+    color: rgb(241, 241, 239);
+}
+h2{
+    color: rgb(48, 168, 11);
+}
+h3{
+    color: rgb(238, 238, 10);
+}
+.navbar li:hover{
+    transform:translateY(-5px);
+    transition:.3s ease;
+}
+img:hover{
+    transform: scale(90%);
+    transition: 1s ease;
+}
+form{
+    background-color: rgba(10, 206, 164, 0.5);
+    border: solid 2px rgb(241, 229, 229);
+    width: 500px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+button{
+    margin-top: 10px;
+    width:100px;
+    height:35px;
+    font-size:25px;
+    background-color: rgba(5, 224, 71, 0.678);
+    border-radius: 50px;
+    border: solid black 2px;
+    color: rgb(223, 238, 223);
+}
+.div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+details{
+    font-size: medium;
+    background-color: aliceblue;
+    font-family: "Rubik Doodle Shadow", system-ui;
+}
+.home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:1vh;
+}
+@keyframes color{
+0%{
+background-color:rgb(179, 214, 21);
+transform:translateY(80px);
+}
+100%{
+background-color: rgb(199, 81, 2);
+transform: translateY(0px);
+}
+}
+@keyframes bgblur{
+    0%{
+        backdrop-filter: blur(100px);
+    }
+    100%{
+        backdrop-filter: blur(10px);
+    }
+
+}
